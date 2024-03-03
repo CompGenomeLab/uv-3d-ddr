@@ -86,10 +86,8 @@ class _hic_dataset_torch(Dataset):
         #categorical_div = [4, 4, 8, 8, 8, 8]
         
         categorical_div = {
-            0: batch_size // 4,
-            1: batch_size // 4,
-            2: batch_size // 4,
-            3: batch_size // 4,
+            0: batch_size // 2,
+            2: batch_size // 2,
         }
         a_graphs = []
         b_graphs = []
