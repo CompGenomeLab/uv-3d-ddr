@@ -2,7 +2,7 @@
 #SBATCH --account=investor
 
 #SBATCH --nodes=1
-#SBATCH --cpus-per-task=12
+#SBATCH --cpus-per-task=14
 #SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:a100:1
 
@@ -18,7 +18,7 @@ echo "CUDA devices:" $CUDA_VISIBLE_DEVICES
 
 dataset="/cta/users/vkaya/gnn/matrix/hic_4DNFIBM9QCFG_nMax51_nMin31_perc10"
 srun --unbuffered python train.py \
-    --n_workers 12 --n_devices 1 --n_nodes 1 \
+    --n_workers 14 --n_devices 1 --n_nodes 1 \
     --dataset $dataset \
     --tag 3 \
     --env slurm \
