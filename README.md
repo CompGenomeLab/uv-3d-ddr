@@ -5,7 +5,7 @@ ___
 This repo contains two sections:
 1. Python notebooks under **3D folder** contain genome architecture analysis:
    1. **boundaries** contains analysis code with respect to TADs and boundaries/insulation.
-   2. **compartments** contains analysis code with respect to compartments, saddle plots saddle data analysis, compartment strength, EV correlation to phasing tracks and also compartment switch analysis code.
+   2. **compartments** contains analysis code with respect to compartments, saddle plots saddle data analysis, compartment strength, EV correlation to phasing tracks and also compartment correlation analysis code.
    3. **RNA** contains R scripts for DESeq time series/DEG analysis and for clustering, also contains a notebook for GNN, chromatin loop, TADs analysis with respect to RNA-Seq data.
    4.  **unibind** contains shell scripts to run TFBS differential enrichment analysis on regions of GNN comparison and chromatin loop anchors, also contains a notebook for visualization.
    5.  **distance_decay.ipynb** notebook is for the analysis for distance decay and powerlaw estimations.
