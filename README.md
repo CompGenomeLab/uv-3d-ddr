@@ -17,4 +17,4 @@ This repo contains two sections:
    1. Follow **save_obs_exp_qt.ipynb** in order to perform preprocessing steps for the matrices (Both megamap, and Hi-C matrices of our own).
    2. Follow **training_dataset.ipynb** in order to generate in-memory datasets to sample target and query graphs from, during training.
    3. Use **train.sh** script to start training.
-   4. Use **predict.sh** for the inference of the model on the contact matrices to be compared. 
+   4. Use **predict.sh** for the inference of the model on the contact matrices to be compared. (GNN Model checkpoint used in the analysis can be found under chekpoints/last.ckpt)
