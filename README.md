@@ -12,7 +12,6 @@ This repo contains two sections:
    6.  **gnn_results_analyze.ipynb** notebook is for the analysis of comparisons from GNN results.
    7.  **loops.ipynb** notebook is for loop calling, loop and anchor analysis.
    8.  **repair_ops.ipynb** notebook is for downstream processing of XR-Seq and Damage-Seq (and simulations) bed files generated with xr-ds-snakemake Snakemake pipeline, and converting to bigwigs.
-   9.  **scc.ipynb** notebook is for the analysis of the Hi-C samples with HiCRep, and MDS code.
 2. **GNN folder** contain dataset generation, training and inference code for the workflow described in the manuscript.
    1. Follow **save_obs_exp_qt.ipynb** in order to perform preprocessing steps for the matrices (Both megamap, and Hi-C matrices of our own). (You can easily modify for your own **.mcool/.cool** files.)
    2. Follow **training_dataset.ipynb** in order to generate in-memory datasets to sample target and query graphs from, during training. (You can easily modify for your own data.)
