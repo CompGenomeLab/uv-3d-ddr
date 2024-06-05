@@ -2,7 +2,7 @@
 ___
 This repository contains exploratory and hierarchical genome architecture analysis code, and research code for dataset generation, training, inference for GNN algorithm, as described in the manuscript titled **"UV-induced reorganization of 3D genome mediates DNA damage response"**.
 
-Preprint is available at [bioRxiv](https://doi.org/).
+Preprint is available at [bioRxiv](https://doi.org/10.1101/2024.05.27.595922).
 
 All analysis was performed on a Linux system (Ubuntu 22.04.4 LTS). To reproduce the analysis and the figures in the manuscript, code is particularly deposited in the form of Jupyter notebooks (Python), while also preserving code outputs.
 
