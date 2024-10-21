@@ -10,7 +10,7 @@ Supplementary tables referenced in the manuscript can be found as **supp_table.x
 ___
 This code repo contains two sections:
 1. Python notebooks under **3D folder** contain genome architecture analysis:
-   1. **boundaries/tads_rework.ipynb** contains analysis code with respect to TADs and boundaries/insulation (Fig3 b,c,d,e,f,g,supFig2a,b,c,d,e).
+   1. **boundaries/tads_rework.ipynb** contains analysis code with respect to TADs and boundaries/insulation (Fig3 b,c,d,e,f,g, Supp.Fig2a,b,c,d,e).
    2. **boundaries/bs_raincloud.ipynb** raincloud plot of boundary strengths per sample (Fig3 a).
    3. **compartments/comp_ev_check.ipynb** contains the correlation analysis of compartment profiles (EV) and phasing tracks (Supp Table).
    4. **compartments/comp_switch.ipynb** contains the analysis code for correlation of compartment profiles with respect to timecourse DEG clusters. (Fig2b,c,d) 
