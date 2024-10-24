@@ -5,6 +5,8 @@ This repository contains exploratory and hierarchical genome architecture analys
 Preprint is available at [bioRxiv](https://doi.org/10.1101/2024.05.27.595922).
 
 All analysis was performed on a Linux system (Ubuntu 22.04.4 LTS). To reproduce the analysis and the figures in the manuscript, code is particularly deposited in the form of Jupyter notebooks (Python), while also preserving code outputs.
+
+Supplementary tables referenced in the manuscript can be found as **supp_table.xlsx**.
 ___
 This code repo contains two sections:
 1. Python notebooks under **3D folder** contain genome architecture analysis:
