@@ -2,11 +2,7 @@
 ___
 This repository contains exploratory and hierarchical genome architecture analysis code, and research code for dataset generation, training, inference for GNN algorithm, as described in the manuscript titled **"UV-induced reorganization of 3D genome mediates DNA damage response"**.
 
-Preprint is available at [bioRxiv](https://doi.org/10.1101/2024.05.27.595922).
-
 All analysis was performed on a Linux system (Ubuntu 22.04.4 LTS). To reproduce the analysis and the figures in the manuscript, code is particularly deposited in the form of Jupyter notebooks (Python), while also preserving code outputs.
-
-Supplementary tables referenced in the manuscript can be found as **supp_table.xlsx**.
 ___
 This code repo contains two sections:
 1. Python notebooks under **3D folder** contain genome architecture analysis:
@@ -17,7 +13,7 @@ This code repo contains two sections:
    5. **compartments/compartments.ipynb** contains analysis code with respect to compartments, saddle plots saddle data analysis, compartment strength. (Fig1d,e,f, Supp.Fig1a)
    6. **compartments/ev-change_deseq.ipynb & ev-tpm.ipynb** EV change profiles and DEGs between samples, and TPMs per compartment profiles (Supp.Fig1c,d).
    7. **compartments/raincloud.ipynb** Top 20% compartment profiles interactions change (Fig1g).
-   8. **RNA** contains R scripts for DESeq time series/DEG analysis and **rna_3D.ipynb** for annotating GNN analysis with respect to RNA-Seq data (Fig6e,f).
+   8. **RNA** contains R scripts for DESeq time series/DEG analysis and **rna_3D.ipynb** for annotating GNN analysis with respect to RNA-Seq data (Fig6e,f). Also, source data files of coseq results for expression clustering related analysis. 
    9. **unibind** contains shell scripts to run TFBS differential enrichment analysis on regions of GNN comparison and chromatin loop anchors, also contains a notebook for visualization (Fig4h, Fig6c,d).
    10. **distance_decay.ipynb** notebook is for the analysis for distance decay and powerlaw estimations (Fig1 b,c).
    11. **gnn_analyse/gnn_results_analyse.ipynb** notebook is for the analysis of comparisons from GNN results (Fig5c,6a,b).
@@ -25,9 +21,9 @@ This code repo contains two sections:
    13. **loops/loops.ipynb** notebook is for loop calling, loop and anchor analysis (Fig4a,b,c,d,e,f, Supp.Fig3).
    14. **loops/loops_rna.ipynb** notebook is for annotating specific loops with DEGs (Fig4g).
    15. **repair_ops.ipynb** notebook is for downstream processing of XR-Seq and Damage-Seq (and simulations) bed files generated with xr-ds-snakemake Snakemake pipeline, and converting to bigwigs.
-2. **GNN folder** contain dataset generation, training and inference code for the workflow described in the manuscript.
+2. **GNN folder** contain dataset generation, training and inference code for the GNN workflow described in the manuscript.
    1. Follow **save_obs_exp_qt.ipynb** in order to perform preprocessing steps for the matrices (Both megamap, and Hi-C matrices of our own). (You can easily modify for your own **.mcool/.cool** files.)
-   2. Follow **training_dataset.ipynb** in order to generate in-memory datasets to sample target and query graphs from, during training. (You can easily modify for your own data.)
+   2. Follow **training_dataset.ipynb** in order to generate in-memory datasets to sample target and query graphs from, for training the GNN model. (You can easily modify for your own data.)
    3. Use **train.sh** script to start training. (An example slurm batch script is provided)
    4. Use **predict.sh** for the inference of the model on the contact matrices to be compared. (GNN Model checkpoint used in the analysis can be found under chekpoints/last.ckpt, also comparison raw results between Control and 12min as reference point can be found as **results_t0_t12.tsv** ) (An example slurm batch script is provided)
 
@@ -39,7 +35,7 @@ Also, all raw sequencing data generated in this study have been submitted to the
 
 ## Dependencies
 
-Below is the list of required packages, installing via Mamba is advised.
+Below is the list of required Python packages, installing via Mamba is advised.
 
 - python=3.11.0
 - cooler=0.9.2

@@ -77,8 +77,7 @@ m_df <- msigdbr(species = "Homo sapiens")
 m_t2g_h <- msigdbr(species = "Homo sapiens", category = "H") %>% 
   dplyr::select(gs_name, ensembl_gene)
 ###
-seed = 43
-set.seed(seed)
+
 runArcsin <- coseq(coseqCounts,
                    normFactors = "none",
                    K=5:15,
@@ -88,7 +87,7 @@ runArcsin <- coseq(coseqCounts,
 
 filterTrsh=0.90
 res = runArcsin
-nameofRes = paste0("runArcsin_seed",seed)
+nameofRes ="runArcsin"
 
 cls = clusters(res)
 genesAssay = assay(res)
