@@ -5,8 +5,10 @@ do
   #for t2 in 0 12 30 60
   do
     if [ "$t1" != "$t2" ]; then
-      bed1="/home/carlos/Desktop/manuscripts/notebooks/loops/loops_anchors_data/t${t1}_t${t2}_specific_anchors1.tsv"
-      bed2="/home/carlos/Desktop/manuscripts/notebooks/loops/loops_anchors_data/t${t1}_t${t2}_specific_anchors2.tsv"
+      bed1="unibind_data/anchors_specific_anchors1.tsv"
+      bed2="unibind_data/anchors_specific_anchors2.tsv"
+
+
       echo ########
       echo $bed1
       echo $bed2
@@ -18,8 +20,9 @@ do
       rm bed1.bed bed2.bed
       
 
-      bed1="/home/carlos/Desktop/manuscripts/notebooks/loops/loops_anchors_data/t${t1}_t${t2}_specific_anchors2.tsv"
-      bed2="/home/carlos/Desktop/manuscripts/notebooks/loops/loops_anchors_data/t${t1}_t${t2}_specific_anchors1.tsv"
+      bed1="unibind_data/anchors_specific_anchors2.tsv"
+      bed2="unibind_data/anchors_specific_anchors1.tsv"
+
       echo ########
       echo $bed1
       echo $bed2

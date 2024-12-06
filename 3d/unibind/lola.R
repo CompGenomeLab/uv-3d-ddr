@@ -6,7 +6,7 @@ firstinputbed = options[1]
 secondinputbed = options[2]
 outputfolder = options[3]
 
-regionDB = readRDS("~/Desktop/projects/lola/hg38_robust_UniBind_LOLA.RDS")
+regionDB = readRDS("~/oldies/projects/lola/hg38_robust_UniBind_LOLA.RDS")
 
 firstregions = readBed(firstinputbed)
 secondregions = readBed(secondinputbed)
